@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Super Heroes HQ</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="app.js"></script>
+
+</head>
+
+<body onload="getHeroDetails()">
+
+    <nav>
+        <div id="top">
+            <a href="index.html">
+                <img src="images/logo.png" width="50" height="50" />
+            </a>
+            <ul id="navegacao">
+                <li><a id="home" href="index.html">Heroes</a></li>
+                <li><a id="createHero" href="createHero.html">Create Hero</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+
+        <div>
+            <h1>Hero's Details</h1>
+        </div>
+
+        <div class="content">
+            <div id="left">
+                <form>
+                    <label for="h_name">Hero Name</label>
+                    <h4 id="h_name">-----</h4>
+
+                    <label for="r_name">Real Name</label>
+                    <h4 id="r_name">-----</h4>
+
+                    <label for="publisher">Publisher</label>
+                    <h4 id="publisher">-----</h4>
+
+                    <label for="fad">First Appearance</label>
+                    <h4 id="fad">-----</h4>
+
+                </form>
+            </div>
+
+            <div id="right">
+                <form class="multiple_entrance">
+                    <label for="power">Powers</label>
+                    
+
+                    <div class="list">
+                        <ul id="powers_list">
+                            <li><h4>-----</h4></li>
+                        </ul>
+                    </div>
+
+                    <label for="team">Teams</label>
+                    
+
+                    <div>
+                        <ul id="teams_list">
+                            <li><h4>-----</h4></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

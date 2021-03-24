@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title> Super Heroes HQ</title>
+
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <script src="app.js"></script>
+
+    </head>
+
+    <body onload="getAllHeroes()">
+
+        <nav class="index">
+            <div id="top">
+                <a href="index.html">
+                    <img src="images/logo.png" width="50" height="50" />
+                </a>
+                <ul id="navegacao">
+                    <li class="primeiro"><a id="home" href="index.html">Heroes</a></li>
+                    <li><a id="brasil" href="createHero.html">Create Hero</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="background">
+
+            <div class="search_menu">
+                <div class="hero_input">
+                    <input type="text" placeholder="Hero Name" id="key_word" />              
+                </div>
+                <div class="search_button">
+                    <button  type="button" onclick="getHeroesByName()">
+                        <i> <b>Search</b> </i>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="content">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="hero_name">Hero Name</th>
+                                <th> </th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody id="heroesList">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+
+</html>

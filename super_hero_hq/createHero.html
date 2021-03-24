@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Super Heroes HQ</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="createHero">
+        <div id="top">
+            <a href="index.html">
+                <img src="images/logo.png" width="50" height="50" />
+            </a>
+            <ul id="navegacao">
+                <li><a id="home" href="index.html">Heroes</a></li>
+                <li><a id="createHero" href="createHero.html">Create Hero</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+
+        <div>
+            <h1>New Hero</h1>
+        </div>
+
+        <div class="content">
+            <div id="left">
+                <form>
+                        <label for="h_name">Hero Name</label>
+                        <input type="text" placeholder="Hero Name" id="h_name" />
+                    
+                        <label for="r_name">Real Name</label>
+                        <input type="text" placeholder="Real Name" id="r_name" />
+                   
+                        <label for="publisher">Publisher</label>
+                        <input type="text" placeholder="Publisher" id="publisher" />
+                    
+                        <label for="fad">First Appearance</label>
+                        <input type="date" placeholder="First Appearance" id="fad" />
+                   
+                </form>
+            </div>
+
+            <div id="right">
+                <form class="multiple_entrance">
+                    <label for="power">Powers</label>
+                    <input type="text" placeholder="Power" id="power" />
+                    <button type="button" onclick="addToPowers()">
+                        <i> <b>add</b> </i>
+                    </button>
+                    <button type="button" onclick="resetPowers()">
+                        <i> <b>reset</b> </i>
+                    </button>
+
+                    <div class="list">
+                        <ul id="powers_list">
+                        </ul>
+                    </div>
+
+
+                    <label for="team">Teams</label>
+                    <input type="text" placeholder="Team" id="team" />
+                    <button type="button" onclick="addToTeams()">
+                        <i> <b>add</b> </i>
+                    </button>
+                    <button type="button" onclick="resetTeams()">
+                        <i> <b>reset</b> </i>
+                    </button>
+
+                    <div>
+                        <ul id="teams_list">
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="bottom">
+                <button type="button" onclick="createHero()">
+                    <i> <b>Create Hero</b> </i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
